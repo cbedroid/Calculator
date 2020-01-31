@@ -1,5 +1,6 @@
 body{
   background:#05A4B2;
+  font-family: Arial,  Helvetica,  sans-serif;
   margin:0;
 }
 
@@ -7,20 +8,23 @@ body{
   text-align:center;
 }
 
-header {
+header h1{
+  font-weight: 800;
   border: 2px black solid;
-  background:white;
+  background:coral;
 }
+
 .container{
   margin:10px auto;
   width:500px;
-
 }
+
 #calculator{
   height:600%;
   padding: 15px 10px;
-  border:5px #909E9E solid;
-  border-radius: 15px 15px 35px 35px;
+  border:2px #909E9E solid;
+  border-radius: 10px 10px 35px 35px;
+  box-shadow: 5px 5px #424242;
   background: #686A70;
 }
 
@@ -28,17 +32,18 @@ header {
   padding-top:20px;
   text-align:center;
   margin-top:10px;
-  height:130px;
-  background:#F3F3F3;
-  border: 5px  #909E9E solid;
-  border-radius: 15px;
-
+  height:100px;
+  background:#EBEDED;
+  border: 3px #909E9E solid;
+  border-radius: 12px;
 }
+
 ul{
   display:block;
   text-decoration:none;
   list-style:none;
 }
+
 #history {
   text-align:right;
   padding-right:50px;
@@ -51,16 +56,14 @@ ul{
   font-weight:600;
 }
 
-
 #buttons {
-  padding-top:20px;
+  padding:10px;
 }
 
-
 button {
-  padding: 16px 0px;
+  padding: 15px 0px;
   width:18%;
-  margin-top:10px;
+  margin-top:8px;
   font-size:24px;
   font-weight:600;
   background:#C2C7C0;
@@ -71,9 +74,8 @@ button {
 button#equal {
 background:#DFB019;
 }
+
 button.btn-special {
 background:#3B00A8;  
-
 }
-
 
