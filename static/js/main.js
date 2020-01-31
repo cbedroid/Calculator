@@ -38,7 +38,7 @@ function updateHistory(num){
 
 
 function operatorList(){
-  //return the operator values into a list
+  //return the operator values into a list(Array)
  return $('.operator').map(function(){
       return $(this).val();
   }).get();
@@ -56,16 +56,18 @@ function clear(mode,prevclick){
   var screen =  results();
   var hist =  history();
   var prev = screen.substr(-1);
+
+  // remove all characters from results
   if (mode == 'c'){
-    // remove all characters from results
     $('#results').html('');
     $('#history').html('');
     return true;
   } 
+
+  // remove the last character from results
+  // if last click was an operator
   else if (mode == 'ce'){
     if (prevclick != '='){
-    // remove the last character from results
-      // if last click was an operator
       results(screen.substr(0,screen.length-1));
       history(hist.substr(0,hist.length-1));
     }
@@ -84,20 +86,22 @@ function checkClick(){
   $('button').click(function(){
     var lastchar = history().substr(-1);
     var clicked = this.value
-    // if starting character is an operator and it 
-    //  is called before a number
+
     try{
       if (clicked == "") return;
       else if (error == true){
+        // reset display on errors
         results('');
         history('');
         error = false;
       }
+      // if starting character is an operator 
+      //  and it is called before a number
       if ((operatorList().indexOf(clicked) != -1) &&
           (lastchar==false)){
           return false;
       } 
-      //"CE or C" clear screen
+      //"check for CE or C" to clear screen
       else if (clear(clicked,lastclick)){
         return true;
       }
@@ -109,32 +113,31 @@ function checkClick(){
       }
       
       //Check for operator changes
+      // operator "IS" the last character and another operator is called
+      // then replace the operator with current one
       else if ((operatorList().indexOf(lastchar) != -1) && 
           (operatorList().indexOf(clicked) != -1)){
-        // operator "IS" the last character
-          // replace the operator with another one
-        if (results() !=""){
+          if (results() !=""){
           removeLast();
           
         };
       }
-         
+
+        // Show the history and results to user
         updateResults(clicked);
         updateHistory($(this).html());
-
         lastclick = clicked;
     }
     catch{
+      // display error msg to user
       results('ERROR');
       error = true;  
     }
-
   })//button click
 }
 
 
-
-// change home.html gamers border to green if player is online
+// Run main functions
 mouse_movement();
 checkClick();
 
