@@ -1,21 +1,9 @@
 var old_color;
 // capture button previous css state 
 // changes button's bgcolor onhover 
-function getDefaultState(){
-   $('button').mouseenter(function(){
-      old_color = $(this).css('background');
-       $(this).css({'background':'red'}) ;
-});
-}
 
 // capture mouseenter and mouseleave
 // changes button to its default css state on mouse leave
-function mouse_movement(){
-  getDefaultState();
-  $('button').mouseleave(function(){
-       $(this).css({'background':old_color}) ;
-  });
-}
 
 
 function results(num){
@@ -58,7 +46,7 @@ function clear(mode,prevclick){
   var prev = screen.substr(-1);
 
   // remove all characters from results
-  if (mode == 'c'){
+  if (mode === 'c'){
     $('#results').html('');
     $('#history').html('');
     return true;
@@ -66,8 +54,8 @@ function clear(mode,prevclick){
 
   // remove the last character from results
   // if last click was an operator
-  else if (mode == 'ce'){
-    if (prevclick != '='){
+  else if (mode === 'ce'){
+    if (prevclick !== '='){
       results(screen.substr(0,screen.length-1));
       history(hist.substr(0,hist.length-1));
     }
@@ -88,8 +76,8 @@ function checkClick(){
     var clicked = this.value
 
     try{
-      if (clicked == "") return;
-      else if (error == true){
+      if (clicked === "") return;
+      else if (error){
         // reset display on errors
         results('');
         history('');
@@ -98,7 +86,7 @@ function checkClick(){
       // if starting character is an operator 
       //  and it is called before a number
       if ((operatorList().indexOf(clicked) != -1) &&
-          (lastchar==false)){
+          (lastchar===false)){
           return false;
       } 
       //"check for CE or C" to clear screen
@@ -117,7 +105,7 @@ function checkClick(){
       // then replace the operator with current one
       else if ((operatorList().indexOf(lastchar) != -1) && 
           (operatorList().indexOf(clicked) != -1)){
-          if (results() !=""){
+          if (results() !==""){
           removeLast();
           
         };
@@ -138,6 +126,5 @@ function checkClick(){
 
 
 // Run main functions
-mouse_movement();
 checkClick();
 
