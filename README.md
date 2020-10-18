@@ -2,9 +2,9 @@
 
 A simple calculator built using **HTML**, **CSS**, and **JavaScript**
 
-**Note:** This project is old and outdated!
+**Note:** This project is `old` and `outdated`! :no_good_man:
 
-** For modern project please visit [here](https://github.com/cbedroid)**
+**For modern project please visit :point_right: [here](https://github.com/cbedroid) :point_left:** 
 
 
 
