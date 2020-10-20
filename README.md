@@ -19,12 +19,13 @@ A simple calculator built using **HTML**, **CSS**, and **JavaScript**
 
 ### Previous Design
 
-<span align='center'>
-  <img src="https://raw.github.com/cbedroid/calculator/master/github/screenshot1.png" width="600" height="400"><br/>
-  <img src="https://raw.github.com/cbedroid/calculator/master/github/screenshot2.png" width="600" height="400"><br/>
-  <img src="https://raw.github.com/cbedroid/calculator/master/github/screenshot3.png" width="600" height="400">
+<span align='center' style="margin: 10px 0;">
+  <img src="https://raw.github.com/cbedroid/calculator/master/github/screenshot1.png" style="margin-bottom:20px;" width="600" height="400"><br/>
+  <img src="https://raw.github.com/cbedroid/calculator/master/github/screenshot2.png"  style="margin-bottom:20px;" width="600" height="400"><br/>
+  <img src="https://raw.github.com/cbedroid/calculator/master/github/screenshot3.png" style="margin-bottom:20px;" width="600" height="400">
 </span>
 
+--- 
 
 ### Updated Design - 10/20/20
 
