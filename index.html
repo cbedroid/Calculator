@@ -1,85 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Fix for mobile viewport -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  
-  <link rel='stylesheet' type='text/css' href='static/css/main.css'></link>
-  <title>Calculator</title>
-</head>
-<body>
-  <header class='d-block w-100 text-center'>
-    <h1>CALCULATOR</h1>
-  </header>
-  <div class="container">
-    <div id="calculator">
-      <div class="top-tilt">
-      <div class="view">
-        <ul>
-          <li id="history"></li>
-          <li id="results"></li>
-        </ul>
-      </div>
-      </div>
-      <div id='buttons' >
-        <div class="row-one">
-          <span>
-            <button class='btn-special' value=''>MR</button>
-            <button class='btn-special' value=''>MC</button>
-            <button class='btn-special' value=''>M+</button>
-            <button class='text-light bg-primary' value='('>(</button>
-            <button class='text-light bg-primary' value=')'>)</button>
-          </span>
-        </div>
-        <div class="row-two">
-          <span>
-            <button value='7'>7</button>
-            <button value='8'>8</button>
-            <button value='9'>9</button>
-            <button class='text-light bg-primary operator' value='/'>÷</button>
-            <button class='btn-special' value='c'>C</button>
-          </span>
-        </div>
-        <div class="row-three">
-          <span>
-            <button value='4'>4</button>
-            <button value='5'>5</button>
-            <button value='6'>6</button>
-            <button class='text-light bg-primary operator' value='*'>x</button>
-            <button class='btn-special' value='ce'>CE</button>
-          </span>
-        </div>
-        <div class="row-four">
-          <span>
-            <button value='1'>1</button>
-            <button value='2'>2</button>
-            <button value='3'>3</button>
-            <button class='text-light bg-primary operator' value='-'>-</button>
-            <button class='text-light bg-primary operator' value='**(.5)'>√</button>
-        </div>
-        <div class="row-five">
-          <span>
-            <button class='text-light bg-primary operator'value=''>±</button>
-            <button value='0'>0</button>
-            <button value='.'>.</button>
-            <button class='text-light bg-primary operator' value='+'>+</button>
-            <button id='equal' class='operator' value='='>=</button>
-        </div>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fix for mobile viewport -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <header class="d-block w-100 text-center">
+      <h1>CALCULATOR</h1>
+    </header>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12  col-lg-8">
+          <!-- calculator -->
+          <div id="calculator" class="mt-4 px-sm-3">
+            <!-- top tilt -->
+            <div class="top-tilt">
+              <div class="view p-sm-1 mt-sm-4">
+                <ul>
+                  <li id="history"></li>
+                  <li id="results"></li>
+                </ul>
+              </div>
+            </div>
+            <!-- top tilt -->
+
+            <!-- buttons -->
+            <div id="buttons" class="mx-sm-n3">
+              <div class="row-one">
+                  <button class="btn-special" value="">MR</button>
+                  <button class="btn-special" value="">MC</button>
+                  <button class="btn-special" value="">M+</button>
+                  <button class="text-light bg-primary" value="(">(</button>
+                  <button class="text-light bg-primary" value=")">)</button>
+              </div>
+              <!--/ row one -->
+              <div class="row-two">
+                  <button value="7">7</button>
+                  <button value="8">8</button>
+                  <button value="9">9</button>
+                  <button class="text-light bg-primary operator" value="/">
+                    ÷
+                  </button>
+                  <button class="btn-special" value="c">C</button>
+              </div>
+
+              <!--/ row two -->
+              <div class="row-three">
+                  <button value="4">4</button>
+                  <button value="5">5</button>
+                  <button value="6">6</button>
+                  <button class="text-light bg-primary operator" value="*">
+                    x
+                  </button>
+                  <button class="btn-special" value="ce">CE</button>
+              </div>
+
+              <!--/ row three-->
+              <div class="row-four">
+                  <button value="1">1</button>
+                  <button value="2">2</button>
+                  <button value="3">3</button>
+                  <button class="text-light bg-primary operator" value="-">
+                    -
+                  </button>
+                  <button class="text-light bg-primary operator" value="**(.5)">
+                    √
+                  </button>
+              </div>
+
+              <!--/ row four -->
+              <div class="row-five">
+                  <button class="text-light bg-primary operator" value="">
+                    ±
+                  </button>
+                  <button value="0">0</button>
+                  <button value=".">.</button>
+                  <button class="text-light bg-primary operator" value="+">
+                    +
+                  </button>
+                  <button id="equal" class="operator" value="=">=</button>
+              </div>
+              <!--/ row five -->
+            </div>
+            <!-- buttons -->
+          </div>
+          <!-- calculator -->
+    </div>
+    </div>
     </div>
 
-  </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src='static/js/main.js'></script>
-</body>
+    <script src="static/js/main.js"></script>
+  </body>
 </html>
