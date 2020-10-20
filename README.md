@@ -1,6 +1,6 @@
 # CALCULATOR
 
-A simple calculator built using **HTML**, **CSS**, and **JavaScript**
+A 3d calculator built using **HTML**, **CSS**, and **JavaScript**
 
 **Note: This project is `old` and `outdated`! :no_good_man:**
 
@@ -19,20 +19,23 @@ A simple calculator built using **HTML**, **CSS**, and **JavaScript**
 
 ### Previous Design
 
-<span align='center' style="margin: 10px 0;">
-  <img src="https://raw.github.com/cbedroid/calculator/master/github/screenshot1.png" style="margin-bottom:20px;" width="600" height="400"><br/>
-  <img src="https://raw.github.com/cbedroid/calculator/master/github/screenshot2.png"  style="margin-bottom:20px;" width="600" height="400"><br/>
-  <img src="https://raw.github.com/cbedroid/calculator/master/github/screenshot3.png" style="margin-bottom:20px;" width="600" height="400">
-</span>
+<div align='flex' style="display:flex;width:100%;justify-content:space-between;">
+  <img src="https://raw.github.com/cbedroid/calculator/master/github/screenshot1.png" style="margin-bottom:20px;" width="30%" height="400"/>
+  <img src="https://raw.github.com/cbedroid/calculator/master/github/screenshot2.png"  style="margin-bottom:20px;" width="30%" height="400"/>
+  <img src="https://raw.github.com/cbedroid/calculator/master/github/screenshot3.png" style="margin-bottom:20px;" width="30%" height="400"/>
+</div>
 
 --- 
 
 ### Updated Design - 10/20/20
 
 **Updated to 3d layout**
-<span align='center'>
-  <img src="https://raw.github.com/cbedroid/calculator/master/github/screenshot4.png" width="600" height="400"><br/>
-  <img src="https://raw.github.com/cbedroid/calculator/master/github/screenshot5.png" width="600" height="400"><br/>
-</span>
+
+
+<div style="display:flex;">
+  <span><img src="https://raw.github.com/cbedroid/calculator/master/github/screenshot4.png" width="45%" height="300"/></span>
+  <span style="width:10px;"></span>
+  <span><img src="https://raw.github.com/cbedroid/calculator/master/github/screenshot5.png" width="45%" height="300"/></span>
+</div>
 
 
