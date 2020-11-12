@@ -20,8 +20,8 @@ A 3d calculator built using **HTML**, **CSS**, and **JavaScript**
 ### Previous Design
 
 <div align='flex' style="display:flex;width:100%;justify-content:space-between;">
-  <img src="https://raw.github.com/cbedroid/calculator/master/github/screenshot1.png" style="margin-bottom:20px;" width="75%" height="400"/>
-  <img src="https://raw.github.com/cbedroid/calculator/master/github/screenshot2.png"  style="margin-bottom:20px;" width="75%" height="400"/>
+  <img src="https://raw.github.com/cbedroid/calculator/master/github/screenshot1.png" style="margin-bottom:20px;" width="100%" height="400"/>
+  <img src="https://raw.github.com/cbedroid/calculator/master/github/screenshot2.png"  style="margin-bottom:20px;" width="100%" height="400"/>
 </div>
 
 --- 
